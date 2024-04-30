@@ -298,7 +298,8 @@ input::placeholder{
         right: 0;
         bottom: 0;
         margin: auto;
-        height: 80%;
+        max-height: 90vh;
+        height: 88%;
     }
 
     .phone .left-messages2{
