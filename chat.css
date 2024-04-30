@@ -137,7 +137,7 @@ body{
 .messages .left-messages2{
     display: flex;
     max-width: 60%;
-    width: fit-content;
+    width: 100%;
     background-color: hsl(270, 3%, 86%);
     border-radius: 10px 10px 10px 3px;
     padding: 5px;
@@ -249,8 +249,8 @@ input::placeholder{
 
 .contents{
     width: 40%;
-    position: relative;
-    left: 300px;
+    position: absolute;
+    right: 0;
 }
 .contents h3{
     width: 50%;
@@ -269,11 +269,56 @@ input::placeholder{
 .gray-bg{
     background-color:hsl(270, 20%, 96%);
     opacity: 0.3;
-    height: 85dvh;
+    height: 75dvh;
     width: 20%;
-    position: relative;
-    left: 145px;
-    top: 69px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     border-radius: 200px 10px 0px 0px;
-    overflow: hidden;
+}
+
+@media(max-width:375px){
+    .container{
+        display: contents;
+        max-height: 150vh;
+        height: fit-content;
+    }
+    .mv{
+        width: 50%;
+        border-radius: 0px 0px 200px 0px;
+        height: 80vh;
+
+    }
+
+    .phone{
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 80%;
+    }
+
+    .phone .left-messages2{
+        width: 58%;
+    }
+    .contents{
+        margin:50px;
+        margin-left: auto;
+        margin-right: 10px;
+        margin-bottom:auto;
+        width: 80%;
+        
+    }
+    .contents p{
+        width: auto;
+    }
+    .container h3{
+        width: auto;
+    }
+    .gray-bg{
+        display: none;
+    }
 }
