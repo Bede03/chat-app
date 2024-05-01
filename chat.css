@@ -299,7 +299,7 @@ input::placeholder{
         bottom: 0;
         margin: auto;
         max-height: 90vh;
-        height: 93%;
+        height: 88%;
     }
 
     .phone .left-messages2{
@@ -321,5 +321,19 @@ input::placeholder{
     }
     .gray-bg{
         display: none;
+    }
+}
+
+@media(max-width:326px){
+    .phone{
+        height: 90%;
+    }
+}
+@media(max-width:305px){
+    .phone{
+        height: 93%;
+    }
+    .contents{
+        margin-top: 70px;
     }
 }
