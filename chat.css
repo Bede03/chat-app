@@ -253,7 +253,7 @@ input::placeholder{
     right: 0;
 }
 .contents h3{
-    width: 50%;
+    width: 100%;
     color: hsl(271, 36%, 24%);
     font-size: 25px;
     
